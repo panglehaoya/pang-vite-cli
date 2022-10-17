@@ -1,6 +1,7 @@
 <template>
   <div>
     {{ count }}
+    {{ text }}
   </div>
 </template>
 
@@ -11,7 +12,8 @@ export default defineComponent({
   name: 'HelloWorld',
   setup() {
     const count = ref(0)
-    return { count }
+    const text = ref('hello vue3')
+    return { count, text }
   },
 })
 </script>
